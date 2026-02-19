@@ -274,7 +274,7 @@ Experiments on the widely adopted EPIC-Kitchens-100 benchmark demonstrate that A
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/teaser.png" alt="First research result visualization" loading="lazy"/>
+      <img src="static/images/backward_analysis.jpg" alt="First research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
         The model consists of two modules. The Action-Guided Attention uses the most recent $S$ action predictions as keys, the exponential moving average (EMA) of all predicted actions as the query, and $S$ frame embeddings as values to generate a history context $\tilde{h}_t$. The \textit{Adaptive Gating} then integrates this history context with the current frame embedding $e_t$ to produce a fused representation, which is mapped to the new prediction $\hat{y}_t$.
       </h2>
