@@ -1,70 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="Action-Guided Attention for Video Action Anticipation - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="Action-Guided Attention for Video Action Anticipation">
+  <meta name="description"
+    content="Action-Guided Attention (AGA) explicitly leverages predicted action sequences as queries and keys to guide sequence modeling for video action anticipation.">
+  <meta name="keywords"
+    content="video action anticipation, attention mechanism, transformer, computer vision, deep learning">
+  <meta name="author" content="Tsung-Ming Tai, Sofia Casarin, Andrea Pilzer, Werner Nutt, Oswald Lanz">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
+  <meta property="og:site_name" content="Free University of Bozen-Bolzano & NVIDIA">
   <meta property="og:title" content="Action-Guided Attention for Video Action Anticipation">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:description"
+    content="Action-Guided Attention (AGA) explicitly leverages predicted action sequences as queries and keys to guide sequence modeling for video action anticipation.">
+  <meta property="og:url" content="https://corcovadoming.github.io/AGA">
+  <meta property="og:image" content="https://corcovadoming.github.io/AGA/static/images/backward_analysis.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Action-Guided Attention for Video Action Anticipation - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:published_time" content="2026-05-01T00:00:00.000Z">
+  <meta property="article:author" content="Tsung-Ming Tai">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="Video Action Anticipation">
+  <meta property="article:tag" content="Computer Vision">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:site" content="@TsungMingTai">
+  <meta name="twitter:creator" content="@TsungMingTai">
   <meta name="twitter:title" content="Action-Guided Attention for Video Action Anticipation">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:description"
+    content="Action-Guided Attention (AGA) explicitly leverages predicted action sequences as queries and keys to guide sequence modeling for video action anticipation.">
+  <meta name="twitter:image" content="https://corcovadoming.github.io/AGA/static/images/backward_analysis.jpg">
   <meta name="twitter:image:alt" content="Action-Guided Attention for Video Action Anticipation - Research Preview">
 
   <!-- Academic/Research Specific -->
   <meta name="citation_title" content="Action-Guided Attention for Video Action Anticipation">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_author" content="Tai, Tsung-Ming">
+  <meta name="citation_author" content="Casarin, Sofia">
+  <meta name="citation_author" content="Pilzer, Andrea">
+  <meta name="citation_author" content="Nutt, Werner">
+  <meta name="citation_author" content="Lanz, Oswald">
   <meta name="citation_publication_date" content="2026">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
+  <meta name="citation_conference_title" content="The Fourteenth International Conference on Learning Representations">
+  <meta name="citation_pdf_url" content="https://openreview.net/pdf?id=uKFVZMPppq">
+
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,112 +67,135 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>Action-Guided Attention for Video Action Anticipation - AUTHOR_NAMES | Academic Research</title>
-  
+  <title>Action-Guided Attention for Video Action Anticipation</title>
+
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
+
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
+
   <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
+
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
   <!-- Fallback for browsers that don't support preload -->
   <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
+
   <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
+
   <script defer src="static/js/index.js"></script>
-  
+
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     "headline": "Action-Guided Attention for Video Action Anticipation",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "description": "Action-Guided Attention (AGA) explicitly leverages predicted action sequences as queries and keys to guide sequence modeling for video action anticipation.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Tsung-Ming Tai",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Free University of Bozen-Bolzano & NVIDIA"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Sofia Casarin",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Free University of Bozen-Bolzano"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Andrea Pilzer",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "NVIDIA"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Werner Nutt",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Free University of Bozen-Bolzano"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Oswald Lanz",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Free University of Bozen-Bolzano"
         }
       }
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2026-05-01",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "ICLR 2026"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "url": "https://corcovadoming.github.io/AGA",
+    "image": "https://corcovadoming.github.io/AGA/static/images/backward_analysis.jpg",
+    "keywords": ["video action anticipation", "attention mechanism", "transformer", "computer vision", "deep learning"],
     "abstract": "Anticipating future actions in videos is challenging, as the observed frames provide only evidence of past activities, requiring the inference of latent intentions to predict upcoming actions. Existing transformer-based approaches, which rely on dot-product attention over pixel representations, often lack the high-level semantics necessary to model video sequences for effective action anticipation. As a result, these methods tend to overfit to explicit visual cues present in the past frames, limiting their ability to capture underlying intentions and degrading generalization to unseen samples. To address this, we propose Action-Guided Attention (AGA), an attention mechanism that explicitly leverages predicted action sequences as queries and keys to guide sequence modeling. Our approach fosters the attention module to emphasize relevant moments from the past based on the upcoming activity and combine this information with the current frame embedding via a dedicated gating function. The design of AGA enables post-training analysis of the knowledge discovered from the training set. 
 Experiments on the widely adopted EPIC-Kitchens-100 benchmark demonstrate that AGA generalizes well from validation to unseen test sets. Post-training analysis can further examine the action dependencies captured by the model and the counterfactual evidence it has internalized, offering transparent and interpretable insights into its anticipative predictions.",
-    "citation": "BIBTEX_CITATION_HERE",
+    "citation": "@inproceedings{tai2026action,\n  title={Action-Guided Attention for Video Action Anticipation},\n  author={Tai, Tsung-Ming and Casarin, Sofia and Pilzer, Andrea and Nutt, Werner and Lanz, Oswald},\n  booktitle={The Fourteenth International Conference on Learning Representations},\n  year={2026},\n  url={https://openreview.net/forum?id=uKFVZMPppq}\n}",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "https://corcovadoming.github.io/AGA"
     },
     "about": [
       {
         "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
+        "name": "Video Action Anticipation"
       },
       {
         "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+        "name": "Computer Vision"
       }
     ]
   }
   </script>
-  
+
   <!-- Website/Organization Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "name": "Free University of Bozen-Bolzano & NVIDIA",
+    "url": "https://www.unibz.it/",
+    "logo": "https://corcovadoming.github.io/AGA/static/images/favicon.ico",
     "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
+      "https://twitter.com/TsungMingTai",
+      "https://github.com/CorcovadoMing"
     ]
   }
   </script>
 </head>
+
 <body>
 
 
@@ -188,165 +205,167 @@ Experiments on the widely adopted EPIC-Kitchens-100 benchmark demonstrate that A
   </button>
 
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Action-Guided Attention for Video Action Anticipation</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="" target="_blank">Tsung-Ming Tai</a><sup>1,2</sup>,</span>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">Action-Guided Attention for Video Action Anticipation</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="" target="_blank">Tsung-Ming Tai</a><sup>1,2</sup>,</span>
                 <span class="author-block">
                   <a href="" target="_blank">Sofia Casarin</a><sup>1</sup>,</span>
-                  <span class="author-block">
-                    <a href="" target="_blank">Andrea Pilzer</a><sup>2</sup>,</span>
-                      <span class="author-block">
-                      <a href="" target="_blank">Werner Nutt</a><sup>1</sup>,</span>
-                        <span class="author-block">
-                        <a href="" target="_blank">Oswald Lanz</a><sup>1</sup>,</span>
-                  </span>
-                  </div>
+                <span class="author-block">
+                  <a href="" target="_blank">Andrea Pilzer</a><sup>2</sup>,</span>
+                <span class="author-block">
+                  <a href="" target="_blank">Werner Nutt</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="" target="_blank">Oswald Lanz</a><sup>1</sup></span>
+              </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block"><sup>1</sup>Free University of Bozen-Bolzano <sup>2</sup>NVIDIA<br>ICLR 2026</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>Free University of Bozen-Bolzano, <sup>2</sup>NVIDIA<br>ICLR
+                  2026</span>
+              </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://openreview.net/forum?id=uKFVZMPppq&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions)" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://openreview.net/forum?id=uKFVZMPppq&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions)"
+                      target="_blank" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Paper</span>
                     </a>
-                  </span> -->
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code (Coming Soon!)</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+
+                  <span class="link-block">
+                    <a href="https://github.com/CorcovadoMing/AGA" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                  <!-- TODO: Update with your arXiv paper ID -->
+                  <span class="link-block">
+                    <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/backward_analysis.jpg" alt="First research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        The model consists of two modules. The Action-Guided Attention uses the most recent $S$ action predictions as keys, the exponential moving average (EMA) of all predicted actions as the query, and $S$ frame embeddings as values to generate a history context $\tilde{h}_t$. The \textit{Adaptive Gating} then integrates this history context with the current frame embedding $e_t$ to produce a fused representation, which is mapped to the new prediction $\hat{y}_t$.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Anticipating future actions in videos is challenging, as the observed frames provide only evidence of past activities, requiring the inference of latent intentions to predict upcoming actions. Existing transformer-based approaches, which rely on dot-product attention over pixel representations, often lack the high-level semantics necessary to model video sequences for effective action anticipation. As a result, these methods tend to overfit to explicit visual cues present in the past frames, limiting their ability to capture underlying intentions and degrading generalization to unseen samples. To address this, we propose Action-Guided Attention (AGA), an attention mechanism that explicitly leverages predicted action sequences as queries and keys to guide sequence modeling. Our approach fosters the attention module to emphasize relevant moments from the past based on the upcoming activity and combine this information with the current frame embedding via a dedicated gating function. The design of AGA enables post-training analysis of the knowledge discovered from the training set. 
-Experiments on the widely adopted EPIC-Kitchens-100 benchmark demonstrate that AGA generalizes well from validation to unseen test sets. Post-training analysis can further examine the action dependencies captured by the model and the counterfactual evidence it has internalized, offering transparent and interpretable insights into its anticipative predictions.
-          </p>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="static/images/backward_analysis.jpg" alt="First research result visualization" loading="lazy" />
+          <h2 class="subtitle has-text-centered">
+            The model consists of two modules. The Action-Guided Attention uses the most recent $S$ action predictions
+            as keys, the exponential moving average (EMA) of all predicted actions as the query, and $S$ frame
+            embeddings as values to generate a history context $\tilde{h}_t$. The \textit{Adaptive Gating} then
+            integrates this history context with the current frame embedding $e_t$ to produce a fused representation,
+            which is mapped to the new prediction $\hat{y}_t$.
+          </h2>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Anticipating future actions in videos is challenging, as the observed frames provide only evidence of
+                past activities, requiring the inference of latent intentions to predict upcoming actions. Existing
+                transformer-based approaches, which rely on dot-product attention over pixel representations, often lack
+                the high-level semantics necessary to model video sequences for effective action anticipation. As a
+                result, these methods tend to overfit to explicit visual cues present in the past frames, limiting their
+                ability to capture underlying intentions and degrading generalization to unseen samples. To address
+                this, we propose Action-Guided Attention (AGA), an attention mechanism that explicitly leverages
+                predicted action sequences as queries and keys to guide sequence modeling. Our approach fosters the
+                attention module to emphasize relevant moments from the past based on the upcoming activity and combine
+                this information with the current frame embedding via a dedicated gating function. The design of AGA
+                enables post-training analysis of the knowledge discovered from the training set.
+                Experiments on the widely adopted EPIC-Kitchens-100 benchmark demonstrate that AGA generalizes well from
+                validation to unseen test sets. Post-training analysis can further examine the action dependencies
+                captured by the model and the counterfactual evidence it has internalized, offering transparent and
+                interpretable insights into its anticipative predictions.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+    </section>
+    <!-- End paper abstract -->
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@inproceedings{tai2026action,
+  title={Action-Guided Attention for Video Action Anticipation},
+  author={Tai, Tsung-Ming and Casarin, Sofia and Pilzer, Andrea and Nutt, Werner and Lanz, Oswald},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
+  url={https://openreview.net/forum?id=uKFVZMPppq}
 }</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
+      </div>
+    </section>
+    <!--End BibTex citation -->
 
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+              <p>
+                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                  href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                You are free to borrow the source code of this website, we just ask that you link back to this page in
+                the footer. <br> This website is licensed under a <a rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                  Commons Attribution-ShareAlike 4.0 International License</a>.
+              </p>
 
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+
+</html>
